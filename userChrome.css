@@ -1,0 +1,168 @@
+.titlebar-buttonbox-container{
+  display: none;
+}
+
+#navigator-toolbox {
+  border: 0px !important;
+}
+
+toolbar .toolbarbutton-1 {
+	appearance: none !important;
+	margin: -1px;
+	padding: 0 var(--toolbarbutton-outer-padding);
+	-moz-box-pack: center;
+}
+
+#TabsToolbar {
+  margin-top: -1px !important;
+  margin-bottom: 1px !important;
+  margin-left: 26vw !important;
+  max-height: 32px !important;
+}
+.tabbrowser-arrowscrollbox {
+  height: 32px !important;
+  min-height: 32px !important;
+}
+
+.titlebar-placeholder[type="pre-tabs"] {
+  display: none !important;
+}
+
+.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
+	width: 30px;
+}
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+  border-left : none !important;
+}
+/*
+.tab-line {
+  dislay: none !important;
+}
+*/
+:root {
+  --toolbox-border-bottom-color: transparent !important;
+}
+
+#nav-bar {
+  background: transparent !important;
+  margin-top: -32px !important;
+  margin-bottom: -1px !important;
+  margin-right: 72vw !important;
+  height: 32px !important;
+  font-size: 9px;
+  font-family: Courier;
+}
+#urlbar-container {
+  min-width: 280px !important;
+}
+#urlbar {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+#page-action-buttons {
+  display: none !important;
+}
+
+.tab-background:not([selected=true]), .tab-background[selected="true"], #titlebar-buttonbox,
+#TabsToolbar, #PersonalToolbar, #urlbar, #nav-bar {
+  background: #31363b !important;
+}
+
+/*
+    Hide back & forward buttons
+*/
+#back-button {
+  display: none !important;
+}
+#forward-button {
+  display: none !important;
+}
+
+#urlbar .urlbar-input-box {
+  text-align: left;
+}
+
+#PanelUI-button {
+    display: block;
+    position: fixed;
+    right: 10px !important;
+    margin: 5px 0px 0px 0px !important;
+}
+
+.bookmark-item > .toolbarbutton-icon {
+  display: none !important;
+}
+
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]: {
+  margin-inline-end: 0px !important;
+}
+
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+  border-left: none !important;
+}
+
+.urlbar-history-dropmarker,
+#urlbar:hover > .urlbar-textbox-container > .urlbar-history-dropmarker {
+  display: none !important;
+}
+
+.tab-label {
+  -moz-box-flex: 1 !important; text-align: center !important;
+  font-family: Courier;
+}
+
+#TabsToolbar .tabbrowser-tab[selected] {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 10px;
+  font-family: Courier;
+}
+
+.tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
+  visibility: collapse !important;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  visibility: visible !important;
+  display: block !important;
+}
+
+#personal-bookmarks #PlacesToolbarItems {
+  -moz-box-pack: center;
+}
+
+.urlbar-input-box > .urlbar-input::placeholder {
+  opacity: 0 !important;
+}
+
+/*
+   Hide Extension Name in the identity area unless
+   hovered for half a second (updated for Fx80)
+*/
+#identity-box.extensionPage #identity-icon-labels,
+#identity-box.extensionPage #identity-icon-label {
+  visibility: collapse !important;
+  transition: visibility 250ms ease-in-out;
+}
+
+#identity-box.extensionPage:hover #identity-icon-labels,
+#identity-box.extensionPage:hover #identity-icon-label {
+  visibility: collapse !important;
+  transition: visibility 250ms ease-in-out 500ms;
+}
+
+#tracking-protection-icon-container {
+  visibility: collapse !important;
+}
+
+#identity-icon {
+  visibility: visible !important;
+}
+
+#urlbar[open] > #urlbar-background{ border-color: transparent !important; }
+
+#urlbar[focused="true"] > #urlbar-background,
+#searchbar:focus-within {
+border-color: var(--lwt-toolbar-field-border-color, hsla(240,5%,5%,.35)) !important;
+}
