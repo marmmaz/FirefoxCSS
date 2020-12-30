@@ -240,9 +240,15 @@ menuitem[disabled="true"]{ color: rgb(179, 16, 47) !important; }
 menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
 
 /* Dark Sidebar */
-#sidebar-box{ background-color: rgb(42,42,46) !important; }
-#sidebar-box,
-.sidebar-panel{ color: rgb(200,200,200) !important; }
+ #sidebar-box,
+ #sidebar,
+ .sidebar-placesTree {
+     -moz-appearance: none !important;
+     font-family: var(--font-primary) !important;
+     font-size: var(--font-base-size) !important;
+     color: var(--color-light) !important;
+     background-color: #31363b !important;
+ }
 
 /*Context Menu Unselected Items Color*/
 menu[disabled="true"], menuitem[disabled="true"] {
@@ -259,3 +265,4 @@ tooltip {
   color: rgb(160, 162, 164);
   font: message-box;
 }
+
