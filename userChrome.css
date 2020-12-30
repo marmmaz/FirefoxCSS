@@ -60,12 +60,19 @@ toolbar .toolbarbutton-1 {
   border: none !important;
   box-shadow: none !important;
 }
+/*URL Bar Color*/
+:root:-moz-lwtheme-brighttext {
+  --lwt-toolbar-field-background-color: rgb(49, 54, 59) !important;
+  --lwt-toolbar-field-border-color: rgb(49, 54, 59) !important;
+  --lwt-toolbar-field-focus:rgb(49, 54, 59) !important;
+}
+
 #page-action-buttons {
   display: none !important;
 }
 
 .tab-background:not([selected=true]), .tab-background[selected="true"], #titlebar-buttonbox,
-#TabsToolbar, #PersonalToolbar, #urlbar, #nav-bar {
+#TabsToolbar, #PersonalToolbar, #urlbar, #urlbar-container, #nav-bar {
   background: #31363b !important;
 }
 
@@ -87,7 +94,7 @@ toolbar .toolbarbutton-1 {
     display: block;
     position: fixed;
     right: 10px !important;
-    margin: 3px 0px 0px 0px !important;  
+    margin: 3px 0px 0px 0px !important;
 }
 
 .bookmark-item > .toolbarbutton-icon {
@@ -171,7 +178,7 @@ border-color: var(--lwt-toolbar-field-border-color, hsla(240,5%,5%,.35)) !import
 /* Uses dark theme colors but does not respect dark theme variables (they wouldn't work on sidebar context menu) */
 
 :root{
-  --uc-menu-bkgnd: rgb(74,74,79);
+  --uc-menu-bkgnd: #31363b;
   --uc-menu-color: rgb(230,230,230);
   --uc-menu-dimmed: rgba(255,255,255,0.1);
   --uc-menu-disabled: rgb(50,50,50);
