@@ -241,3 +241,14 @@ menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
 menu[disabled="true"], menuitem[disabled="true"] {
     color: rgb(160, 162, 164) !important;
 }
+
+tooltip {
+  -moz-appearance: none !important;
+  margin-top: 21px;
+  border: 1px solid InfoText;
+  padding: 2px 3px;
+  max-width: 40em;
+  background-color: rgb(42,42,46);
+  color: rgb(160, 162, 164);
+  font: message-box;
+}
