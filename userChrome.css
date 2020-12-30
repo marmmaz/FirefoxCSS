@@ -50,7 +50,7 @@ toolbar .toolbarbutton-1 {
   margin-right: 72vw !important;
   height: 32px !important;
   font-size: 9px;
-  font-family: Courier;
+  font-family: Andale Mono;
 }
 #urlbar-container {
   min-width: 280px !important;
@@ -87,7 +87,7 @@ toolbar .toolbarbutton-1 {
     display: block;
     position: fixed;
     right: 10px !important;
-    margin: 5px 0px 0px 0px !important;
+    margin: 3px 0px 0px 0px !important;  
 }
 
 .bookmark-item > .toolbarbutton-icon {
@@ -109,14 +109,14 @@ toolbar .toolbarbutton-1 {
 
 .tab-label {
   -moz-box-flex: 1 !important; text-align: center !important;
-  font-family: Courier;
+  font-family: Andale Mono;
 }
 
 #TabsToolbar .tabbrowser-tab[selected] {
   color: white !important;
   font-weight: bold !important;
   font-size: 10px;
-  font-family: Courier;
+  font-family: Andale Mono;
 }
 
 .tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
@@ -165,4 +165,79 @@ toolbar .toolbarbutton-1 {
 #urlbar[focused="true"] > #urlbar-background,
 #searchbar:focus-within {
 border-color: var(--lwt-toolbar-field-border-color, hsla(240,5%,5%,.35)) !important;
+}
+
+/* Makes context menus dark. Also affects some portions of menu popups */
+/* Uses dark theme colors but does not respect dark theme variables (they wouldn't work on sidebar context menu) */
+
+:root{
+  --uc-menu-bkgnd: rgb(74,74,79);
+  --uc-menu-color: rgb(230,230,230);
+  --uc-menu-dimmed: rgba(255,255,255,0.1);
+  --uc-menu-disabled: rgb(50,50,50);
+}
+panel richlistbox,
+panel tree,
+panel button,
+panel menulist,
+panel textbox,
+panel input,
+menupopup,
+menu,
+menuitem{ -moz-appearance: none !important; }
+
+menulist,
+menuitem,
+menu{ min-height: 1.8em }
+
+panel menulist{ border: 1px solid transparent }
+
+panel richlistbox,
+panel tree,
+panel button,
+panel menulist,
+panel textbox,
+panel input,
+panel #searchbar,
+menupopup:not(#BMB_bookmarksPopup),
+#main-menubar > menu > menupopup,
+#context-navigation{
+  color: var(--uc-menu-color) !important;
+  padding: 2px;
+  background-color: var(--uc-menu-bkgnd) !important;
+  border-color: var(--uc-menu-disabled) !important;
+}
+
+panel textbox input{ padding: 2px !important; }
+
+panel input{ border-width: 1px; border-style: solid; background-color: rgba(0,0,0,0.1) !important; }
+panel #searchbar{ background-color: rgba(0,0,0,0.1) !important; padding: 0 !important; }
+panel #searchbar input{ background-color: transparent !important; }
+
+panel menulist:hover,
+panel menulist[open]{ border-color: Highlight !important; }
+
+#editBMPanel_folderMenuList > menupopup > menuitem{ color: var(--uc-menu-color) !important; }
+
+panel treechildren::-moz-tree-row(selected),
+panel button:hover,
+menu:hover,
+menu[_moz-menuactive],
+menu[open],
+menuitem:hover,
+menuitem[_moz-menuactive]{ background-color: var(--uc-menu-dimmed) !important; color: inherit !important; }
+
+menu[disabled="true"],
+menuitem[disabled="true"]{ color: rgb(179, 16, 47) !important; }
+
+menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }
+
+/* Dark Sidebar */
+#sidebar-box{ background-color: rgb(42,42,46) !important; }
+#sidebar-box,
+.sidebar-panel{ color: rgb(200,200,200) !important; }
+
+/*Context Menu Unselected Items Color*/
+menu[disabled="true"], menuitem[disabled="true"] {
+    color: rgb(160, 162, 164) !important;
 }
