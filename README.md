@@ -20,32 +20,3 @@
   <li>Restart Firefox.</li>
   <li>Done!</li>
 </ol>
-
-* {
-  box-sizing: border-box;
-}
-
-.img-container {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-</head>
-<body>
-
-<h4 align="center">Clean, color matching context menus, sidebars and tooltips.</h4>
-
-<div class="clearfix">
-  <div class="img-container">
-  <img src="https://i.imgur.com/8IuDUCl.png" alt="Context Menu and Sidebar" style="width:100%">
-  </div>
-  <div class="img-container">
-  <img src="https://i.imgur.com/gSfq4l7.png" alt="Tooltips" style="width:100%">
-  </div>
