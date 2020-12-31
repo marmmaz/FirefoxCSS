@@ -4,7 +4,7 @@
 <p align="center"><img src="https://i.imgur.com/JK0FsDG.png"></img></p1>
 
 <h4 align="center">Clean, color matching context menus, sidebars and tooltips.</h4>
-<p align="center"><img width ='300px' src="https://i.imgur.com/gYnNDKm.png"></img></p1>
+<p align="center"><img width ='500px' src="https://i.imgur.com/gYnNDKm.png"></img></p1>
 
 <h4>Steps for applying this configuration</h4>
 <ol>
