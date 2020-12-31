@@ -22,10 +22,10 @@
 <p align="center">Right click on the bar and select customize</h5>
 <p align="center"><img src="https://i.imgur.com/IDxoP4o.png"></img></p>
 
-<p align="center">At the bottom on the window, click on Density and select Compact.</p>
+<p align="center">At the bottom of the window, click on Density and select Compact.</p>
 <p align="center"><img src="https://i.imgur.com/0ZBHZS4.png"></img></p>
 
-<p align="center">Finally add/remove by dragging the shortcuts/extensions/spaces you need.</p>
+<p align="center">Finally add/remove shortcuts/extensions/spaces via drag and drop.</p>
 <p align="center"><img src="https://i.imgur.com/Mv8Jwrs.png"></img></p>
 
 <h4>about:config tweaks</h4>
