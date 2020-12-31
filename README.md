@@ -19,7 +19,7 @@
 </ol>
 
 <h4 align="center">Navbar customization/layout</h4>
-<p align="center"Right click on the bar and select "customize"</p>
+<p align="center"Right click on the bar and select *customize*</p>
 <p align="center"><img src="https://i.imgur.com/IDxoP4o.png"></img></p>
 
 <h4>about:config tweaks</h4>
