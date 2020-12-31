@@ -9,7 +9,7 @@
 <h4 align="center">And, matching tooltips of course.</h4>
 <p align="center"><img width='250px' src="https://i.imgur.com/gSfq4l7.png"></img></p1>
 
-<h4 align='center'>Steps for applying this configuration</h4>
+<h4>Steps for applying this configuration</h4>
 <ol>
   <li>Type about:profiles into your urlbar, accept the displayed warning.</li>  
   <li>Open the root directory folder found on the page.</li>  
