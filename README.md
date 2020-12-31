@@ -17,3 +17,16 @@
   <li>Restart Firefox.</li>
   <li>Done!</li>
 </ol>
+
+<h4>about:config tweaks</h4>
+<ul>
+  <li>full-screen-api.warning.timeout = 0</li>
+  <li>full-screen-api.transition-duration.enter = 0 0</li>
+  <li>full-screen-api.transition-duration.leave = 0 0</li>
+  <li>browser.tabs.loadBookmarksInTabs = true</li>
+  <li>browser.tabs.loadBookmarksInBackground = true</li>
+  <li>browser.tabs.tabMinWidth = 50</li>
+  <li>extensions.pocket.enabled = false</li>
+  <li>extensions.screenshots.disabled = true</li>
+  <li>ui.prefersReducedMotion = 1</li>
+</ul>
