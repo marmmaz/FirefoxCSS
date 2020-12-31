@@ -1,6 +1,6 @@
 <h2 align="center">minimalFOX</h2>
 
-<h4 align="center">A compact & minimal Firefox theme build for macOS.</h4>
+<h4 align="center">A compact & minimal Firefox theme built for macOS.</h4>
 <p align="center"><img src="https://i.imgur.com/oFOo3lO.png"></img></p1>
 
 <h4 align="center">Clean, color matching context menus, sidebars and tooltips.</h4>
