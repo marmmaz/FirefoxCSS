@@ -18,6 +18,10 @@
   <li>Done!</li>
 </ol>
 
+<h4 align="center">Navbar customization/layout</h4>
+<p align="center"Right click on the bar and select "customize"</h4>
+<p align="center"><img src="https://i.imgur.com/IDxoP4o.png"></img></p>
+
 <h4>about:config tweaks</h4>
 <ul>
   <li>full-screen-api.warning.timeout = 0</li>
