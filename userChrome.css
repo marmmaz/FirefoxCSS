@@ -60,11 +60,13 @@ toolbar .toolbarbutton-1 {
   border: none !important;
   box-shadow: none !important;
 }
+
 /*URL Bar Color*/
 :root:-moz-lwtheme-brighttext {
   --lwt-toolbar-field-background-color: rgb(49, 54, 59) !important;
   --lwt-toolbar-field-border-color: rgb(49, 54, 59) !important;
   --lwt-toolbar-field-focus:rgb(49, 54, 59) !important;
+  --toolbar-bgcolor: rgb(49, 54, 59) !important;
 }
 
 #page-action-buttons {
@@ -257,12 +259,15 @@ menu[disabled="true"], menuitem[disabled="true"] {
 
 tooltip {
   -moz-appearance: none !important;
-  margin-top: 21px;
-  border: 1px solid InfoText;
-  padding: 2px 3px;
-  max-width: 40em;
-  background-color: rgb(42,42,46);
-  color: rgb(160, 162, 164);
-  font: message-box;
+  font-size: var(--font-base-size) !important;
+  width: 150px !important;
+  height: auto;
+  font-family: var(--font-primary);
+  font-weight: normal !important;
+  color: var(--lwt-tab-text) !important;
+  background-color: #31363b !important;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: none !important;
+  text-align: center;
 }
-
