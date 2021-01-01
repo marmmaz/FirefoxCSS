@@ -30,6 +30,7 @@
 
 <h4>about:config tweaks</h4>
 <ul>
+  <li>full-screen-api.approval-required = false</li>
   <li>full-screen-api.warning.timeout = 0</li>
   <li>full-screen-api.transition-duration.enter = 0 0</li>
   <li>full-screen-api.transition-duration.leave = 0 0</li>
