@@ -271,3 +271,7 @@ tooltip {
   box-shadow: none !important;
   text-align: center;
 }
+
+/*Loading screen color*/
+.browserContainer { background-color: #31363b !important; } !important
+}
