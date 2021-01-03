@@ -41,6 +41,7 @@
   <li>browser.tabs.loadBookmarksInTabs = true</li>
   <li>browser.tabs.loadBookmarksInBackground = true</li>
   <li>browser.tabs.tabMinWidth = 50</li>
+  <li>browser.urlbar.dnsResolveSingleWordsAfterSearch = 0</li>
   <li>extensions.pocket.enabled = false</li>
   <li>extensions.screenshots.disabled = true</li>
   <li>ui.prefersReducedMotion = 1</li>
