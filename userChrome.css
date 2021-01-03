@@ -1,3 +1,89 @@
+/*Auto Hide Top Bar*/
+:root{
+  --uc-autohide-toolbox-delay: 200ms; /* Wait 0.1s before hiding toolbars */
+  --uc-toolbox-rotation: 65deg;  /* This may need to be lower on mac - like 75 or so */
+}
+
+:root[sizemode="maximized"]{
+  --uc-toolbox-rotation: 63deg;
+}
+
+@media (-moz-os-version: windows-win10){
+
+  :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 9px !important; }
+  :root[tabsintitlebar][sizemode="maximized"] #navigator-toolbox{ margin-top: -1px }
+
+  @media screen and (min-resolution: 1.25dppx){
+    :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 8px !important; }
+  }
+  @media screen and (min-resolution: 1.5dppx){
+    :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 8px !important; }
+  }
+  @media screen and (min-resolution: 2dppx){
+    :root[tabsintitlebar][sizemode="maximized"]:not([inDOMFullscreen]) > body > box{ margin-top: 7px !important; }
+  }
+  #navigator-toolbox:not(:-moz-lwtheme){ background-color: rgb(32, 35, 64) !important; }
+}
+
+:root[sizemode="fullscreen"]{ margin-top: 0px !important; }
+
+#navigator-toolbox{
+  position: fixed !important;
+  display: block;
+  background-color: var(--lwt-accent-color,black) !important;
+  transition: transform 82ms linear, opacity 82ms linear !important;
+  transition-delay: var(--uc-autohide-toolbox-delay) !important;
+  transform-origin: top;
+  transform: rotateX(var(--uc-toolbox-rotation));
+  opacity: 0;
+  line-height: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* #mainPopupSet:hover ~ box > toolbox,
+/* Uncomment the above line to make toolbar visible if some popup is hovered */
+#navigator-toolbox:hover,
+#navigator-toolbox:focus-within{
+  transition-delay: 33ms !important;
+  transform: rotateX(0);
+  opacity: 1;
+}
+
+#navigator-toolbox > *{ line-height: normal; pointer-events: auto }
+
+#navigator-toolbox,
+#navigator-toolbox > *{
+  width: 100vw;
+  -moz-appearance: none !important;
+}
+
+/* These two exist for oneliner compatibility */
+#nav-bar{ width: var(--uc-navigationbar-width,20vw) }
+#TabsToolbar{ width: calc(100vw - var(--uc-navigationbar-width,0px)) }
+
+/* Don't apply transform before window has been fully created */
+:root:not([sessionrestored]) #navigator-toolbox{ transform:none !important }
+
+:root[customizing] #navigator-toolbox{
+  position: relative !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+#navigator-toolbox[inFullscreen] > #PersonalToolbar,
+#PersonalToolbar[collapsed="true"]{ display: none }
+
+/* Uncomment this if tabs toolbar is hidden with hide_tabs_toolbar.css */
+ /*#titlebar{ margin-bottom: -9px }*/
+
+/* Uncomment the following for compatibility with tabs_on_bottom.css - this isn't well tested though */
+/*
+:root{ --uc-titlebar-padding: 0px !important; }
+#navigator-toolbox{ flex-direction: column; display: flex; }
+#titlebar{ order: 2 }
+*/ 
+
 .titlebar-buttonbox-container{
   display: none;
 }
@@ -78,9 +164,7 @@ toolbar .toolbarbutton-1 {
   background: #31363b !important;
 }
 
-/*
-    Hide back & forward buttons
-*/
+/*Hide back & forward buttons*/
 #back-button {
   display: none !important;
 }
@@ -145,10 +229,7 @@ toolbar .toolbarbutton-1 {
   opacity: 0 !important;
 }
 
-/*
-   Hide Extension Name in the identity area unless
-   hovered for half a second (updated for Fx80)
-*/
+/*Hide Extension Name in the identity area unless hovered for half a second (updated for Fx80)*/
 #identity-box.extensionPage #identity-icon-labels,
 #identity-box.extensionPage #identity-icon-label {
   visibility: collapse !important;
@@ -176,8 +257,7 @@ toolbar .toolbarbutton-1 {
 border-color: var(--lwt-toolbar-field-border-color, hsla(240,5%,5%,.35)) !important;
 }
 
-/* Makes context menus dark. Also affects some portions of menu popups */
-/* Uses dark theme colors but does not respect dark theme variables (they wouldn't work on sidebar context menu) */
+/* Dark context menus dark & menu popups */
 
 :root{
   --uc-menu-bkgnd: #31363b;
@@ -257,6 +337,7 @@ menu[disabled="true"], menuitem[disabled="true"] {
     color: rgb(160, 162, 164) !important;
 }
 
+/*Dark tooltops*/
 tooltip {
   -moz-appearance: none !important;
   font-size: var(--font-base-size) !important;
@@ -273,5 +354,4 @@ tooltip {
 }
 
 /*Loading screen color*/
-.browserContainer { background-color: #31363b !important; } !important
-}
+.browserContainer { background-color: #31363b !important; } !important }
