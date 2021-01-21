@@ -31,6 +31,15 @@
 <p align="center">Finally add/remove shortcuts/extensions/spaces via drag and drop.</p>
 <p align="center"><img src="https://i.imgur.com/Mv8Jwrs.png"></img></p>
 
+<h4>Neccessary addon:</h4>
+<p>For the full color scheme you'll need to install this addon:</p>
+<p>Firefox Color: https://addons.mozilla.org/en-US/firefox/addon/firefox-color/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search</p>
+
+<p>It's completley free. Once installed you'll need to apply my theme: https://color.firefox.com/?theme=XQAAAAJUAQAAAAAAAABBKYhm849SCia48_6EGccwS-xMDPr7thdH6_4ErpiIjBgjl6kvKSCXjM5WXDG4Cjy1EaSGG1_TR3iUDV6o9yCCamOh-s-hlIs5DzTo4WqkXScLht-NnmR2ESD4uJhqPW6frhgUtvDqF5111kzunGAQXxigm1NzhmAUopQk0LLBqF6rDub18hpf8rJ4gApxwi195CODHG1EoL4jYH7mz9vXTjtR0xCh87HgJ9Y6K7G-n_-K9gAA</p>
+
+<h4>Disable autohiding toolbar</h4>
+<p>Open up the userChrome.css file and delete lines 1-85.</p>
+
 <h4>about:config tweaks</h4>
 <ul>
   <li>full-screen-api.approval-required = false</li>
