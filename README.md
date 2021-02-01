@@ -2,7 +2,6 @@
 
 <h4 align="center">A compact & minimal Firefox theme built for macOS.</h4>
 <p align="center"><img src="https://i.imgur.com/CY2Dhkn.png"></img></p1>
-<p align="center"><img src="https://i.imgur.com/Y1i9J3u.png"></img></p1>
 
 <h4 align="center">Hidden toolbar, reveal it by hovering over it with your cursor.</h4>
 <p align="center"><img width ='805px' src="https://res.cloudinary.com/dhnodbdcr/image/upload/v1609679736/screencast_2021-01-03_14-13-48_i3lhn8.gif"></img></p>
