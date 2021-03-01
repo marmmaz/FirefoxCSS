@@ -1,4 +1,4 @@
-/*Auto Hide Top Bar*/
+/*Auto Hide Top Bar - to disable auto-hide feature delete rows 1 - 86*/
 :root{
   --uc-autohide-toolbox-delay: 200ms; /* Wait 0.1s before hiding toolbars */
   --uc-toolbox-rotation: 65deg;  /* This may need to be lower on mac - like 75 or so */
@@ -82,7 +82,7 @@
 :root{ --uc-titlebar-padding: 0px !important; }
 #navigator-toolbox{ flex-direction: column; display: flex; }
 #titlebar{ order: 2 }
-*/ 
+*/
 
 .titlebar-buttonbox-container{
   display: none;
@@ -114,9 +114,6 @@ toolbar .toolbarbutton-1 {
   display: none !important;
 }
 
-.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
-	width: 30px;
-}
 .tabbrowser-tab::before, .tabbrowser-tab::after {
   border-left : none !important;
 }
@@ -139,7 +136,7 @@ toolbar .toolbarbutton-1 {
   font-family: Andale Mono;
 }
 #urlbar-container {
-  min-width: 280px !important;
+  min-width: 169px !important;
 }
 #urlbar {
   background: transparent !important;
@@ -177,10 +174,10 @@ toolbar .toolbarbutton-1 {
 }
 
 #PanelUI-button {
-    display: block;
-    position: fixed;
+    display: none;
+   /* position: fixed;
     right: 10px !important;
-    margin: 3px 0px 0px 0px !important;
+    margin: 3px 0px 0px 0px !important;*/
 }
 
 .bookmark-item > .toolbarbutton-icon {
@@ -337,7 +334,7 @@ menu[disabled="true"], menuitem[disabled="true"] {
     color: rgb(160, 162, 164) !important;
 }
 
-/*Dark tooltops*/
+/*Dark tooltips*/
 tooltip {
   -moz-appearance: none !important;
   font-size: var(--font-base-size) !important;
