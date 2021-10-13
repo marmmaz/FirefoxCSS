@@ -45,7 +45,7 @@
   <li>full-screen-api.approval-required = false</li>
   <li>full-screen-api.warning.delay = -1</li>
   <li>full-screen-api.warning.timeout = 0</li>
- 
+  <li>full-screen-api.macos-native-full-screen = true</li>
   <li>full-screen-api.transition-duration.enter = 0 0</li>
   <li>full-screen-api.transition-duration.leave = 0 0</li>
   <li>browser.tabs.loadBookmarksInTabs = true</li>
@@ -55,5 +55,4 @@
   <li>extensions.pocket.enabled = false</li>
   <li>extensions.screenshots.disabled = true</li>
   <li>ui.prefersReducedMotion = 1</li>
-  <li>full-screen-api.macos-native-full-screen = true</li>
 </ul>
